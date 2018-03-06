@@ -202,7 +202,7 @@
 ```javascript
 ^once
 ```
-　　
+
 这个模式包含一个特殊的字符^，表示该模式只匹配那些以once开头的字符串。例如该模式与字符串"once upon a time"匹配，与"There once was a man from NewYork"不匹配。正如如^符号表示开头一样，$符号用来匹配那些以给定模式结尾的字符串。
 
 ```javascript
