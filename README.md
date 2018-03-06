@@ -175,15 +175,21 @@
 
 ## 6. 部分例子
 
-| 正则表达式 | 说明 |
-| ------ | ------ |
-| /\b([a-z]+) \1\b/gi | 一个单词连续出现的位置|
-| /(\w+):\/\/([^/:]+)(:\d*)?([^# ]*)/ | 将一个URL解析为协议、域、端口及相对路径|
-| /^(?:Chapter|Section) [1-9][0-9]{0,1}$/ | 定位章节的位置|
-| /[-a-z]/ | A至z共26个字母再加一个-号。|
-| /ter\b/ | 可匹配chapter，而不能terminal|
-| /\Bapt/ | 可匹配chapter，而不能aptitude|
-| /Windows(?=95 \|98 \|NT )/ | 可匹配Windows95或Windows98或WindowsNT,当找到一个匹配后，从Windows后面开始进行下一次的检索匹配。|
+```javascript
+/\b([a-z]+) \1\b/gi //一个单词连续出现的位置
+
+/(\w+):\/\/([^/:]+)(:\d*)?([^# ]*)/ //将一个URL解析为协议、域、端口及相对路径
+
+/^(?:Chapter|Section) [1-9][0-9]{0,1}$/ //定位章节的位置
+
+/[-a-z]/ //A至z共26个字母再加一个-号。
+
+/ter\b/ //可匹配chapter，而不能terminal
+
+/\Bapt/ //可匹配chapter，而不能aptitude
+
+/Windows(?=95 \|98 \|NT )/ //可匹配Windows95或Windows98或WindowsNT,当找到一个匹配后，从Windows后面开始进行下一次的检索匹配。
+```
 
 ## 7. 正则表达式匹配规则
 
